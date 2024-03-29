@@ -1,0 +1,104 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+.header-one {
+  border-bottom: $border-color;
+  width: 100%;
+  &__left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    color: $text-dark;
+
+    &__mail {
+      font-size: 16px;
+      color: $text-dark;
+      float: left;
+      border-right: $border-color;
+      padding-top: 17px;
+      padding-bottom: 15px;
+      padding-right: 20px;
+    }
+    &__tel {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+    }
+  }
+  &__right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: $text-dark;
+    float: left;
+    justify-content: end;
+    color: $text-dark;
+    a {
+      color: $text-dark;
+    }
+
+    &__icons {
+      @include text-center;
+      gap: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 20px;
+    }
+
+    &__lan-selector {
+      border-right: $border-color;
+      border-left: $border-color;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__login-panel {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+.header-two{
+  padding: 40px 0;
+ .container{
+@include text-center($jcc:space-between);
+  }
+  .middle-categories{
+    display: flex;
+    gap: 50px;
+    border: 1px solid #ebebeb;
+    width: 550px;
+    margin-left: 60px;
+    align-items: center;
+   
+  }
+  p{
+ width: 120px;
+  }
+  input{
+    border: none;
+    outline: none;
+    width: 330px;
+    padding: 8px;
+  }
+  .fa-magnifying-glass{
+    border: 1px solid $primary-color;
+    background-color: $primary-color;
+    font-size: 20px;
+    @include text-center;
+    color: white;
+    padding: 10px;
+  }
+
+  .right-icons{
+    display: flex;
+    gap: 15px;
+    font-size: 17px;
+  }
+}
+

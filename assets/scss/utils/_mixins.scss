@@ -1,0 +1,5 @@
+@mixin text-center($jcc:center,$aic:center,$df:flex ) {
+  align-items: $aic;
+  justify-content: $jcc;
+  display: $df;
+}

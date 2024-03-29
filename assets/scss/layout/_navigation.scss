@@ -1,0 +1,41 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.all-departments{
+    background-color: $text-dark;
+    @include text-center;
+    color: white;
+    a{
+        color: white;
+    }
+    ul{
+        display: flex;
+        li:hover {
+            background-color: $primary-color ;
+        }
+        .all-dep{
+            background-color: #3b3b3b;
+        }
+ .active{
+    background-color: $primary-color;
+ }
+    }
+    li{
+        border-right: 1px solid #4c4c4c;
+        padding: 22px 35px;
+        transition: 0.5s;
+    }
+}
+.menu{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color:#4c4c4c ;
+    padding: 13px;
+    a{
+        border: 1px solid #222222;
+        background-color: #222222;
+        padding: 7px;
+        border-radius: 3px;
+    }
+}

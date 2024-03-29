@@ -1,0 +1,66 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.footer-one{
+    background-color: #303030;
+}
+.img-footer{
+@include text-center;
+gap: 90px;
+padding: 30px;
+}
+
+.footer-two{
+    background-color: $footer-back;
+    @include text-center;
+    gap: 100px;
+    padding: 120px;
+    align-items: start;
+    h3{
+        color: white;
+        font-size: $h3-fontsize;
+    }
+    p{
+        color: $footer-p;
+        font-size: $subTitle-fontSize;
+        margin-top: 15px;
+    }
+    .icon-footer{
+        color: white;
+        font-size: $subTitle-fontSize;
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+        
+        :hover{
+            background-color: $primary-color;
+        }
+    }
+    .fa-instagram{
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #434445;
+        transition: 0.5s;
+        
+    }
+    .right-footer{
+        .inp-butt{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        input{
+            
+            padding: 12px;
+            width: 250px;
+            background-color: #303030;
+        border: none;
+        }
+        a{
+            background-color: $primary-color;
+            color: white;
+            padding: 11px; 
+        }
+    }
+        }
